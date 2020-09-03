@@ -1,35 +1,12 @@
-class Things:
-    pass
+from graph import *
 
+x1 = 100; y1 = 100
+x2 = 300; y2 = 200
+N = 10
+rectangle (x1, y1, x2, y2)
+h = (x2 - x1) / (N + 1)
+x = x1 + h
+#for i in range(N):
+  ##x += h
 
-class Inanimaite(Things):
-    pass
-
-
-class Animate(Things):
-    pass
-
-
-class Sidewalks(Inanimaite):
-    pass
-
-
-class Animals(Animate):
-    pass
-
-
-class Mammals(Animals):
-    pass
-
-
-class Giraffes(Mammals):
-    def left_foot_forward(self):
-        print('Left foot forward')
-    def right_foot_back(self):
-        print('Right foot back')
-
-
-reginald = Giraffes()
-for i in range(10):
-    reginald.left_foot_forward()
-    reginald.right_foot_back()
+run()
